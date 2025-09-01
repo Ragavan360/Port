@@ -328,6 +328,9 @@ body.dark-mode {
 body.dark-mode header {
   background: #222;
 }
+body.dark-mode header {
+  background: #222;
+}
 body.dark-mode .navbar .logo { color: #ffeb3b; }
 body.dark-mode .nav-links a { color: #f1f1f1; }
 body.dark-mode .project-card,
@@ -337,11 +340,18 @@ body.dark-mode .contact-info {
   background: #2a2a2a;
   color: #f1f1f1;
 }
- 
+
 
 .social-links {
   position: absolute;
   bottom: 20px;
   right: 20px;
   z-index: 1;
+}
+
+/* Dark Mode Fix for About Section */
+body.dark-mode #about,
+body.dark-mode #about * {
+  color: #f5f5f5 !important;   /* force light text */
+  background: transparent !important; /* remove any white backgrounds */
 }
